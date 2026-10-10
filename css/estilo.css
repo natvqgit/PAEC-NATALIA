@@ -1,90 +1,187 @@
-  header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: rgb(255, 255, 255);
-      padding: 10px 20px;
-    }
-    .logo-pequeno {
-      width: 70px;
-      height: auto;
-      display: block;
-      margin-bottom: 15px;
-    }
-    .barra-navegacion {
-      display: flex;
-      gap: 15px;
-      margin-top: 10px;
-    }
-    main {
-      display: flex;
-      gap: 20px;
-      padding: 10px;
-    }
-    aside {
-      width: 30%;
-      background-color: rgb(255, 167, 231); /* Verde para la naturaleza/animales */
-      color: white;
-      padding: 15px;
-      border-radius: 8px;
-    }
-    section {
-      width: 70%;
-      background-color: rgb(241, 189, 248); /* Naranja amigable */
-      color: rgb(255, 255, 255);
-      padding: 15px;
-      border-radius: 8px;
-    }
-    .imagen-articulo {
-      width: 100%;
-      max-width: 400px;
-      height: auto;
-      display: block;
-      margin: 15px 0;
-      border-radius: 8px;
-      border: 2px solid white;
-    }
-    .publicidad {
-      background-color: rgb(201, 143, 191);
-      border: 2px dashed white;
-      padding: 10px;
-      margin-top: 20px;
-      text-align: center;
-      border-radius: 6px;
-    }
-    .publicidad img {
-      width: 100%;
-      max-width: 180px;
-      height: auto;
-      border-radius: 5px;
-      margin: 8px 0;
-    }
-    .boton-ad {
-      display: inline-block;
-      background-color: white;
-      color: rgb(242, 151, 203);
-      padding: 6px 12px;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 4px;
-      margin-top: 5px;
-      font-size: 13px;
-    }
-    .boton-nav {
-      text-decoration: none;
-      color: rgb(50, 50, 50);
-      background-color: rgb(230, 230, 230);
-      padding: 6px 12px;
-      border-radius: 4px;
-      font-size: 14px;
-      font-family: 'Times New Roman', Times, serif;
-      transition: all 0.3s;
-    }
-    .boton-nav:hover {
-      background-color: rgb(200, 200, 200);
-    }
-    .boton-nav.activo {
-      background-color: rgb(250, 166, 226);
-      color: rgb(255, 255, 255);
-      font-weight: bold;
-    }
+/* ====================
+   ESTILOS GENERALES
+   ==================== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  padding: 10px 20px;
+}
+
+.logo-pequeno {
+  width: 70px;
+  height: auto;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.titulo-principal {
+  margin: 0;
+}
+
+.subtitulo-header {
+  margin: 5px 0 10px 0;
+}
+
+/* Colores específicos de título para cada página */
+.color-index { color: rgb(16, 164, 70); }
+.color-donaciones { color: rgb(4, 116, 62); }
+.color-adopciones { color: rgb(46, 139, 87); }
+
+.barra-navegacion {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.boton-nav {
+  text-decoration: none;
+  color: rgb(50, 50, 50);
+  background-color: rgb(230, 230, 230);
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: 'Times New Roman', Times, serif;
+  transition: all 0.3s;
+}
+
+.boton-nav:hover {
+  background-color: rgb(200, 200, 200);
+}
+
+.boton-nav.activo {
+  background-color: rgb(46, 139, 87);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+
+aside {
+  width: 30%;
+  background-color: rgb(46, 139, 87);
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+section {
+  width: 70%;
+  background-color: rgb(240, 165, 0);
+  color: rgb(255, 255, 255);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* ====================
+   ESTILOS: INDEX
+   ==================== */
+.publicidad-titulo {
+  margin: 5px 0;
+}
+
+.publicidad-texto {
+  font-size: 13px;
+  margin: 5px 0;
+}
+
+.imagen-articulo {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* ====================
+   ESTILOS: DONACIONES
+   ==================== */
+.caja-banco {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.lista-necesidades {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.lista-necesidades div {
+  width: 50%;
+}
+
+.titulo-necesidad {
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+}
+
+.caja-info {
+  background: rgba(0,0,0,0.1);
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.caja-info h3 {
+  margin-top: 0;
+}
+
+/* ====================
+   ESTILOS: ADOPCIONES
+   ==================== */
+.lista-requisitos {
+  padding-left: 20px;
+}
+
+.nota-requisitos {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.ficha-mascota {
+  background-color: white;
+  color: black;
+  width: calc(50% - 15px);
+  padding: 10px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.ficha-mascota img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.ficha-mascota h4 {
+  margin: 10px 0 5px 0;
+  color: rgb(46, 139, 87);
+}
+
+.ficha-mascota p {
+  margin: 0;
+  font-size: 14px;
+}
