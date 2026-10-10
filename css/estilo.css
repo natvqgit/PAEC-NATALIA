@@ -31,8 +31,8 @@ header {
 }
 
 /* Colores específicos de título para cada página */
-.color-index { color: rgb(16, 164, 70); }
-.color-donaciones { color: rgb(4, 116, 62); }
+.color-index { color: rgb(19, 116, 2); }
+.color-donaciones { color: rgb(6, 114, 64); }
 .color-adopciones { color: rgb(46, 139, 87); }
 
 .barra-navegacion {
@@ -85,7 +85,7 @@ section {
 }
 
 /* ====================
-   ESTILOS: INDEX
+   ESTILOS: INDEX Y PUBLICIDAD
    ==================== */
 .publicidad-titulo {
   margin: 5px 0;
@@ -100,6 +100,34 @@ section {
   max-width: 100%;
   border-radius: 8px;
   margin-top: 10px;
+}
+
+/* Imagen de la barra lateral corregida */
+.publicidad img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 10px 0;
+  display: block;
+}
+
+/* Botón "Saber más" corregido */
+.boton-ad {
+  display: inline-block;
+  background-color: rgb(255, 255, 255);
+  color: rgb(46, 139, 87);
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.boton-ad:hover {
+  background-color: rgb(240, 165, 0);
+  color: white;
 }
 
 /* ====================
