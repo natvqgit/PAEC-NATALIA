@@ -1,0 +1,90 @@
+  header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgb(255, 255, 255);
+      padding: 10px 20px;
+    }
+    .logo-pequeno {
+      width: 70px;
+      height: auto;
+      display: block;
+      margin-bottom: 15px;
+    }
+    .barra-navegacion {
+      display: flex;
+      gap: 15px;
+      margin-top: 10px;
+    }
+    main {
+      display: flex;
+      gap: 20px;
+      padding: 10px;
+    }
+    aside {
+      width: 30%;
+      background-color: rgb(255, 167, 231); /* Verde para la naturaleza/animales */
+      color: white;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    section {
+      width: 70%;
+      background-color: rgb(241, 189, 248); /* Naranja amigable */
+      color: rgb(255, 255, 255);
+      padding: 15px;
+      border-radius: 8px;
+    }
+    .imagen-articulo {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      display: block;
+      margin: 15px 0;
+      border-radius: 8px;
+      border: 2px solid white;
+    }
+    .publicidad {
+      background-color: rgb(201, 143, 191);
+      border: 2px dashed white;
+      padding: 10px;
+      margin-top: 20px;
+      text-align: center;
+      border-radius: 6px;
+    }
+    .publicidad img {
+      width: 100%;
+      max-width: 180px;
+      height: auto;
+      border-radius: 5px;
+      margin: 8px 0;
+    }
+    .boton-ad {
+      display: inline-block;
+      background-color: white;
+      color: rgb(242, 151, 203);
+      padding: 6px 12px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+      margin-top: 5px;
+      font-size: 13px;
+    }
+    .boton-nav {
+      text-decoration: none;
+      color: rgb(50, 50, 50);
+      background-color: rgb(230, 230, 230);
+      padding: 6px 12px;
+      border-radius: 4px;
+      font-size: 14px;
+      font-family: 'Times New Roman', Times, serif;
+      transition: all 0.3s;
+    }
+    .boton-nav:hover {
+      background-color: rgb(200, 200, 200);
+    }
+    .boton-nav.activo {
+      background-color: rgb(250, 166, 226);
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+    }
